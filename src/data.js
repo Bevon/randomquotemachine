@@ -1,4 +1,7 @@
-{
+export const colors = ['#E7717D', '#C2CAD0', '#C2B9B0']
+
+
+export const Quotes = {
     "quotes": [
       {
         "quote": "Life isn’t about getting and having, it’s about giving and being.",
