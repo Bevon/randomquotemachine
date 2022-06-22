@@ -5,13 +5,13 @@ export const quoteStyle = {
 }
 export const authorStyle = {
     fontFamily: '"Kdam Thmor Pro", sans-serif',
-    fontSize: '1.5rem',
+    fontSize: '1rem',
     fontWeight: 100,
 }
 
-export const newQuoteStyle = {
+export const headerStyle = {
     fontFamily: '"Kdam Thmor Pro", serif',
-    fontSize: '1.5rem',
+    fontSize: '2.5rem',
     fontWeight: '300',
     color: '#fff',
 }

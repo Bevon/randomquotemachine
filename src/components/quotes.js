@@ -32,11 +32,11 @@ function Quotes({quote, dispatch}) {
     
 
     return (
-   
+        
         <div className='card mb-10 mx-auto shadow p-3 mb-5 bg-body rounded position-absolute top-50 start-50 translate-middle' id='quote-box'>
             <div className='card-body'>
                 <div className='text-center animate__fadeInDown animate__delay-2s' style={quoteStyle}>
-                    <p id='text' className="">{quote.quote.quote}</p>
+                    <p id='text' className="">"{quote.quote.quote}</p>
                 </div>
                 <div className="d-flex flex-row-reverse" style={authorStyle}>
                     <p id='author'> - {quote.quote.author}</p>
@@ -50,11 +50,11 @@ function Quotes({quote, dispatch}) {
                     <div className="col-md-6 d-flex justify-content-end" style={newQuoteStyle}>
                         <button className="btn rounded-pill text-white" style={{backgroundColor:stateColor}} id='new-quote' onClick={handleClick}>New Quote</button>
                     </div>
-                </div>  
+                </div> 
             </div>
         </div>
-  )
+    )
 }
 
 
-export default Quotes
+export default Quotes;
