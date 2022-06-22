@@ -1,9 +1,6 @@
 import React from "react";
 import {Twitter, Twitch} from 'react-feather'
 import 'animate.css';
-
-
-
 import { newQuote } from "../stores/quoteSlice";
 
 

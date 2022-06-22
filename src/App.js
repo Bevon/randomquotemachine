@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Quotes from "./components/quotes";
 import {useSelector, useDispatch} from 'react-redux';
 import { newQuote } from "./stores/quoteSlice";
-
-
+import './index.css'
 
 function App() {
   const quote = useSelector(state => state.quote);
   const dispatch = useDispatch();
+  const [styleState, setStyleState] = useState({})
 
    useEffect(function(){
-        dispatch(newQuote());
+    setStyleState({...styleState, backgroundColor:quote.color})
+    dispatch(newQuote());
    },[dispatch]);
 
   return (
