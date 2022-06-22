@@ -42,12 +42,12 @@ function Quotes({quote, dispatch}) {
                     <p id='author'> - {quote.quote.author}</p>
                 </div>
                 <div className="row">
-                    <div className="col-sm-6 d-flex justify-content-start">
+                    <div className="col-md-6 d-flex justify-content-start">
                         <button style={{backgroundColor:stateColor}}  className="btn  rounded-circle p-2 text-white"><a className="text-white" id='tweet-quote' href='https://twitter.com/intent/tweet'><Twitter/></a></button>
                         <button style={{backgroundColor:stateColor}}  className="btn  rounded-circle p-2 text-white"><a className="text-white" id='tweet-quote' href='https://twitter.com/intent/tweet'><Twitch /></a></button>
                     </div>
                     
-                    <div className="col-sm-6 d-flex justify-content-end" style={newQuoteStyle}>
+                    <div className="col-md-6 d-flex justify-content-end" style={newQuoteStyle}>
                         <button className="btn rounded-pill text-white" style={{backgroundColor:stateColor}} id='new-quote' onClick={handleClick}>New Quote</button>
                     </div>
                 </div>  
