@@ -1,7 +1,7 @@
 import React from "react";
 import {Twitter, Twitch} from 'react-feather'
 import 'animate.css';
-import { newQuote, styleComponents, styleComponentsAsync } from "../stores/quoteSlice";
+import { newQuote } from "../stores/quoteSlice";
 
 
 function Quotes({quote, dispatch}) {

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Quotes from "./components/quotes";
 import {useSelector, useDispatch} from 'react-redux';
-import { newQuote, styleComponentsAsync } from "./stores/quoteSlice";
+import { newQuote } from "./stores/quoteSlice";
 import 'animate.css'
 import { authorStyle, headerStyle } from "./styles";
 
