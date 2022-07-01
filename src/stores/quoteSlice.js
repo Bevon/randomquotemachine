@@ -1,6 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit';
 import {Quotes} from '../data';
 
+
 export const quoteSlice = createSlice({
     name: 'quote',
     initialState: {
@@ -17,4 +18,6 @@ export const quoteSlice = createSlice({
 });
 
 export const {newQuote} = quoteSlice.actions;
+
+
 export default quoteSlice.reducer;

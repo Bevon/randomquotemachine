@@ -1,7 +1,7 @@
 import React from "react";
 import {Twitter, Twitch} from 'react-feather'
 import 'animate.css';
-import { newQuote } from "../stores/quoteSlice";
+import { newQuote, styleComponents, styleComponentsAsync } from "../stores/quoteSlice";
 
 
 function Quotes({quote, dispatch}) {
@@ -11,23 +11,28 @@ function Quotes({quote, dispatch}) {
    const quoteStyle = {
     fontFamily: '"Tangerine", serif',
     fontSize: '2.5rem',
-    color: stateColor
+    color: stateColor,
+    
     }
     const authorStyle = {
     fontFamily: '"Kdam Thmor Pro", sans-serif',
     fontSize: '1.5rem',
     fontWeight: 100,
-    color: stateColor
+    color: stateColor,
+    
     }
     const newQuoteStyle = {
     fontFamily: '"Kdam Thmor Pro", serif',
     fontSize: '1.5rem',
     fontWeight: '300',
-    color: stateColor
+    color: stateColor,
+
     }
    
+    
+       
     function handleClick(){
-        dispatch(newQuote());  
+        dispatch(newQuote());
     }
     
 
